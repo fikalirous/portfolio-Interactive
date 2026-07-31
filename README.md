@@ -2,7 +2,7 @@
 
 The interactive companion to my [static portfolio site](https://fikalirous.github.io/portfolio/), built with [Streamlit](https://streamlit.io). Same case studies, but with live charts you can filter and a couple of simulations you can run yourself.
 
-Live app: **TBD (pending Streamlit Community Cloud deploy)**
+Live app: **https://portfolio-gokulnath.streamlit.app/**
 
 ## Highlights
 
@@ -46,3 +46,13 @@ checklist this app follows.
 
 Deployed on [Streamlit Community Cloud](https://streamlit.io/cloud), pointed at `Home.py` on
 `main`. Community Cloud auto-redeploys on every push — no separate deploy step needed.
+
+## Adding a new project here (in addition to the static site)
+
+This app and the [static site](https://github.com/fikalirous/portfolio) are separate repos with
+separate content — adding a project to one doesn't automatically add it to the other.
+
+1. Write the case study on the relevant `pages/*.py` file, following the same Context/Role/Method/Output/Result structure as the static site.
+2. If there's real underlying data to make interactive, pre-aggregate it (counts, summary stats — never raw/personal rows) into a small CSV in `data/`, following the same privacy checklist as the static site.
+3. Build the chart with Plotly (`utils/theme.py` has the shared color palette) and a `st.slider`/`st.selectbox`/`st.radio` if there's a genuine parameter worth letting a visitor change.
+4. Test locally with `streamlit run Home.py`, then `git push` — Streamlit Community Cloud redeploys automatically within a minute or two.
