@@ -29,10 +29,11 @@ st.caption("Data for international development — interactive edition")
 st.markdown(
     """
     <div class="hero">
-    I've spent four years turning field data into decisions — weather stations that reach 600+ farmers
-    in Odisha, disability-rights datasets that shape policy briefs, TB surveillance databases that
-    support district health teams. I'm currently completing an MSc in Social Data Science at
-    University College Dublin, and looking for data roles at international development organizations.
+    I’m a Social Data Science student at UCD with experience in data analytics, research, and social development.
+    I’ve worked on projects across disability rights, public health, gender, renewable energy,
+    and rural development, focusing on turning data into clear insights for better policy and community outcomes.
+    Now based in Ireland, I’m interested in research roles within think tanks and organisations working on social policy, ESG, and data
+    governance. I aim to build practical, evidence-based solutions that support inclusive and ethical decision-making.
     <br><br>
     This is the interactive companion to my <a href="https://fikalirous.github.io/portfolio/" target="_blank">
     main portfolio site</a> — the same case studies, but with live charts you can filter, and a couple of
