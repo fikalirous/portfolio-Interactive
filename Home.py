@@ -31,7 +31,7 @@ st.markdown(
     <div class="hero">
     I’m a Social Data Science student at UCD with experience in data analytics, research, and social development.
     I’ve worked on projects across disability rights, public health, gender, renewable energy,
-    and rural development, focusing on turning data into clear insights for better policy and community outcomes\.
+    and rural development, focusing on turning data into clear insights for better policy and community outcomes.
     Now based in Ireland, I’m interested in research roles within think tanks and organisations working on social policy, ESG, and data
     governance. I aim to build practical, evidence-based solutions that support inclusive and ethical decision-making.
     <br><br>
