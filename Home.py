@@ -53,51 +53,19 @@ cards = [
     ("🏥 Public Health", "District-level TB surveillance, with the live public dashboard embedded.", "Public_Health"),
     ("🤝 Gender & Grassroots", "Mapping women- and trans-led organizations across Indian states.", "Gender_Grassroots"),
 ]
-cards_html = "".join(
-    f'<a class="ess-tile" href="/{slug}" target="_self">{title}</a>'
-    for title, slug in cards
-)
+for i, (title, desc, page) in enumerate(cards):
+    with cols[i % 2]:
+        st.markdown(f'<div class="card"><h4>{title}</h4><p>{desc}</p></div>', unsafe_allow_html=True)
+        st.write("")
 
 st.markdown(
-    f"""
-    <style>
-    .ess-tile-grid {{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 12px;
-        margin: 8px 0 24px 0;
-    }}
-
-    .ess-tile {{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        min-height: 80px;
-        padding: 18px 14px;
-        border-radius: 8px;
-        background-color: #AD1400;
-        color: #ffffff !important;
-        font-weight: 600;
-        font-size: 1rem;
-        text-decoration: none !important;
-        transition: background-color 0.15s ease;
-    }}
-
-    .ess-tile:hover {{
-        background-color: #670000;
-    }}
-    </style>
-
-    <div class="ess-tile-grid">
-        {cards_html}
-    </div>
-    """,
+    '<div class="card"><h4>🔬 Research</h4><p>MSc coursework at UCD — human values &amp; internet engagement, '
+    'a 33-country AI-regulation text analysis, and a live agent-based compliance simulator you can run with your own parameters.</p></div>',
     unsafe_allow_html=True,
 )
 
+st.write("")
 st.divider()
-
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
