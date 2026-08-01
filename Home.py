@@ -24,7 +24,7 @@ st.markdown(
 )
 
 st.title("Gokulnath G L")
-st.caption("Data for international development — interactive edition")
+st.caption("Data Science for Social Good")
 
 st.markdown(
     """
