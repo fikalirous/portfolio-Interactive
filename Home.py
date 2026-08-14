@@ -12,12 +12,6 @@ st.markdown(
     .stApp { max-width: 1100px; margin: 0 auto; }
     h1, h2, h3 { font-family: Georgia, 'Iowan Old Style', serif; }
     .hero { font-size: 1.1rem; line-height: 1.65; max-width: 70ch; color: #333; }
-    .card {
-        border: 1px solid #D8DED4; border-radius: 8px; padding: 1.1rem 1.3rem;
-        background: #F8F9F6; height: 100%;
-    }
-    .card h4 { margin-top: 0; }
-    .card p { color: #5B655D; font-size: 0.92rem; margin-bottom: 0; }
     </style>
     """,
     unsafe_allow_html=True,
@@ -45,23 +39,21 @@ st.markdown(
 st.write("")
 st.subheader("Where the work sits")
 
-cols = st.columns(2)
 cards = [
-    ("🌦️ Climate & Agriculture", "Automated weather stations, LoRaWAN micro-climate networks, and a live turbulence-intensity model you can explore month by month.", "Climate_Agriculture"),
-    ("⚖️ Policy & Rights", "Disability rights, CSR, and AI-adoption research — filter the charts yourself.", "Policy_Rights"),
-    ("🏥 Public Health", "District-level TB surveillance, with the live public dashboard embedded.", "Public_Health"),
-    ("🤝 Gender & Grassroots", "Mapping women- and trans-led organizations across Indian states.", "Gender_Grassroots"),
+    ("🌦️ Climate & Agriculture", "Automated weather stations, LoRaWAN micro-climate networks, and a live turbulence-intensity model you can explore month by month.", "pages/1_Climate_Agriculture.py"),
+    ("⚖️ Policy & Rights", "Disability rights, CSR, and AI-adoption research — filter the charts yourself.", "pages/2_Policy_Rights.py"),
+    ("🏥 Public Health", "District-level TB surveillance, with the live public dashboard embedded.", "pages/3_Public_Health.py"),
+    ("🤝 Gender & Grassroots", "Mapping women- and trans-led organizations across Indian states.", "pages/4_Gender_Grassroots.py"),
+    ("🔬 Research", "MSc coursework at UCD — human values & internet engagement, a 33-country AI-regulation text analysis, and a live agent-based compliance simulator.", "pages/5_Research.py"),
+    ("📊 Personal Projects", "Self-directed Tableau and Canva dashboards, built outside of any client or coursework brief.", "pages/6_Personal_Projects.py"),
 ]
+cols = st.columns(2)
 for i, (title, desc, page) in enumerate(cards):
     with cols[i % 2]:
-        st.markdown(f'<div class="card"><h4>{title}</h4><p>{desc}</p></div>', unsafe_allow_html=True)
-        st.write("")
-
-st.markdown(
-    '<div class="card"><h4>🔬 Research</h4><p>MSc coursework at UCD — human values &amp; internet engagement, '
-    'a 33-country AI-regulation text analysis, and a live agent-based compliance simulator you can run with your own parameters.</p></div>',
-    unsafe_allow_html=True,
-)
+        with st.container(border=True):
+            st.markdown(f"#### {title}")
+            st.caption(desc)
+            st.page_link(page, label="Open")
 
 st.write("")
 st.divider()

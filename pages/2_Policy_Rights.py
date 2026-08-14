@@ -123,6 +123,7 @@ with tabs[1]:
         "**Result** — Employment and livelihood complaints dominate the CCPD caseload, filed "
         "overwhelmingly by persons with disabilities themselves rather than caregivers or advocates."
     )
+    st.caption("Referenced in a [LinkedIn post](https://www.linkedin.com/posts/disabilityrights-accessibility-inclusion-share-7376214743419822080-yp-S/) crediting the analysis.")
 
 # ---------------------------------------------------------------------------
 with tabs[2]:
@@ -256,16 +257,16 @@ with tabs[5]:
     st.markdown(
         """
 **Context** — CSR spending has been legally mandated in India since 2014, but almost no one had
-traced how much reaches sports. Pacta partnered with the
-[Sports and Society Accelerator](https://www.linkedin.com/posts/gokulnath-g-l-13071a178_csr-sports-in-india-pacta-june-2025-activity-7349091829461508096-7ubI/)
-to build that picture across the mandate's first decade (2014–2023).
+traced how much reaches sports. Pacta partnered with the Sports and Society Accelerator to build
+that picture across the mandate's first decade (2014–2023).
 
 **Method** — Selenium/requests scraping of India's official CSR portal across four fiscal years,
 company-level deep dives, and comparative analysis of listed vs. unlisted companies and state-wise
 spending.
 
 **Output** — *CSR and Sports in India — The First Decade*, co-published with the Sports and Society
-Accelerator, presented across two public Data Walk sessions.
+Accelerator, presented across two public Data Walk sessions, [announced on
+LinkedIn](https://www.linkedin.com/posts/gokulnath-g-l-13071a178_csr-sports-in-india-pacta-june-2025-activity-7349091829461508096-7ubI/).
 
 **Result** — The combined dataset spanned over 1,000 companies' sports-related CSR disclosures
 across a decade, identifying where CSR-to-sports funding concentrates and where it's structurally
