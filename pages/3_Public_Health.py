@@ -50,7 +50,7 @@ st.markdown(
 st.markdown("The dashboard below is the actual live, public report — try clicking a bar in it.")
 
 components.iframe(
-    "https://datastudio.google.com/embed/reporting/7fb5c851-f868-4ca6-a866-6fa89939ce34/page/p_page",
+    "https://datastudio.google.com/reporting/7fb5c851-f868-4ca6-a866-6fa89939ce34",
     height=700,
     scrolling=True,
 )
