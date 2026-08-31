@@ -20,7 +20,7 @@ st.markdown(
 )
 components.iframe(
     "https://fikalirous.github.io/data-center-lens?:showVizHome=no&:embed=true",
-    height=650,width=1000, scrolling=True,
+    height=650,width=2000, scrolling=True,
 )
 
 
