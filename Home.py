@@ -23,7 +23,7 @@ st.caption("Data Science for Social Good")
 st.markdown(
     """
     <div class="hero">
-    I’m a Social Data Science student at UCD with experience in data analytics, research, and social development.
+    I’m a Social Data Science student at University College Dublin with experience in data analytics, research, and social development.
     I’ve worked on projects across disability rights, public health, gender, renewable energy,
     and rural development, focusing on turning data into clear insights for better policy and community outcomes.
     Now based in Ireland, I’m interested in research roles within think tanks and organisations working on social policy, ESG, and data
@@ -37,8 +37,8 @@ st.write("")
 st.subheader("Works")
 
 cards = [
-    ("⚖️ Policy & Rights", "Disability rights, CSR, and AI-adoption research — filter the charts yourself.", "pages/2_Policy_Rights.py"),
-    ("🔬 Research", "MSc coursework at UCD — human values & internet engagement, a 33-country AI-regulation text analysis, and a live agent-based compliance simulator.", "pages/5_Research.py"),
+    ("⚖️ Policy & Rights", "Disability rights, CSR, and AI-adoption research", "pages/2_Policy_Rights.py"),
+    ("🔬 Research", "human values & internet engagement, a 33-country AI-regulation text analysis, and a live agent-based compliance simulator.", "pages/5_Research.py"),
     ("🏥 Public Health", "District-level TB surveillance, with the live public dashboard embedded.", "pages/3_Public_Health.py"),
     ("🤝 Gender & Grassroots", "Mapping women- and trans-led organizations across Indian states.", "pages/4_Gender_Grassroots.py"),
     ("🌦️ Climate & Agriculture", "Automated weather stations, LoRaWAN micro-climate networks, and a live turbulence-intensity model you can explore month by month.", "pages/1_Climate_Agriculture.py"),
