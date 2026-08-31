@@ -9,12 +9,7 @@ from utils.theme import MOSS, BRASS, MUTED, style_fig
 
 st.set_page_config(page_title="Climate & Agriculture", page_icon="🌦️", layout="wide")
 st.title("🌦️ Climate & Agriculture")
-st.caption("Automated weather stations, micro-climate networks, and renewable-energy data pipelines")
 
-st.markdown(
-    "Four years of building the field-to-forecast pipeline for smallholder farmers in Odisha, "
-    "plus a later contract applying the same weather-data skills to renewable energy generation."
-)
 
 st.divider()
 
