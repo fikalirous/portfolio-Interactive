@@ -11,7 +11,7 @@ st.markdown(
     <style>
     .stApp { max-width: 2000px; margin: 0 auto; }
     h1, h2, h3 { font-family: Georgia, 'Iowan Old Style', serif; }
-    .hero { font-size: 1.1rem; line-height: 1.65; max-width: 70ch; color: #333; }
+    .hero { font-size: 1.1rem; line-height: 1.65; max-width: 100ch; color: #333; }
     </style>
     """,
     unsafe_allow_html=True,
