@@ -9,7 +9,7 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    .stApp { max-width: 1100px; margin: 0 auto; }
+    .stApp { max-width: 2000px; margin: 0 auto; }
     h1, h2, h3 { font-family: Georgia, 'Iowan Old Style', serif; }
     .hero { font-size: 1.1rem; line-height: 1.65; max-width: 70ch; color: #333; }
     </style>
