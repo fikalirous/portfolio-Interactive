@@ -9,36 +9,32 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    .stApp { max-width: 1100px; margin: 0 auto; }
+    .stApp { max-width: 2000px; margin: 0 auto; }
     h1, h2, h3 { font-family: Georgia, 'Iowan Old Style', serif; }
-    .hero { font-size: 1.1rem; line-height: 1.65; max-width: 70ch; color: #333; }
+    .hero { font-size: 1.1rem; line-height: 1.65; max-width: 100ch; color: #333; }
     </style>
     """,
     unsafe_allow_html=True,
 )
 
 st.title("Gokulnath G L")
-st.caption("Data Science for Social Good")
+st.subheader("Data Science for Social Good")
 
 st.markdown(
     """
     <div class="hero">
-    I’m a Social Data Science student at UCD with experience in data analytics, research, and social development.
+    I’m a Social Data Science student at University College Dublin with experience in data analytics, research, and social development.
     I’ve worked on projects across disability rights, public health, gender, renewable energy,
     and rural development, focusing on turning data into clear insights for better policy and community outcomes.
     Now based in Ireland, I’m interested in research roles within think tanks and organisations working on social policy, ESG, and data
     governance. I aim to build practical, evidence-based solutions that support inclusive and ethical decision-making.
-    <br><br>
-    This is the interactive companion to my <a href="https://fikalirous.github.io/portfolio/" target="_blank">
-    main portfolio site</a> — the same case studies, but with live charts you can filter, and a couple of
-    simulations you can actually run yourself.
     </div>
     """,
     unsafe_allow_html=True,
 )
 
 st.write("")
-st.subheader("Where the work sits")
+st.subheader("Works")
 
 cards = [
     ("⚖️ Policy & Rights", "Disability rights, CSR, and AI-adoption research", "pages/2_Policy_Rights.py"),

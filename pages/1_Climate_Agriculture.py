@@ -9,82 +9,15 @@ from utils.theme import MOSS, BRASS, MUTED, style_fig
 
 st.set_page_config(page_title="Climate & Agriculture", page_icon="🌦️", layout="wide")
 st.title("🌦️ Climate & Agriculture")
-st.caption("Automated weather stations, micro-climate networks, and renewable-energy data pipelines")
 
-st.markdown(
-    "Four years of building the field-to-forecast pipeline for smallholder farmers in Odisha, "
-    "plus a later contract applying the same weather-data skills to renewable energy generation."
-)
 
 st.divider()
 
 # ---------------------------------------------------------------------------
-st.header("Automated weather station network — Gram Vikas")
+st.header("Weather data extraction & turbulence-intensity analysis ")
 st.markdown(
     """
-**Context** — Smallholder farmers in rural Odisha had no localized weather data to inform planting
-and harvest decisions; regional forecasts were too coarse-grained to act on.
-
-**Role** — Led installation, deployment, and ongoing maintenance of automated weather stations
-across 7 blocks in 6 districts of Odisha.
-
-**Method** — Community-informed site selection, hardware installation and calibration, a
-maintenance protocol run by trained field staff, and the data pipeline turning raw station
-readings into daily agro-advisories.
-"""
-)
-c1, c2, c3 = st.columns(3)
-c1.metric("Blocks", "7")
-c2.metric("Districts", "6")
-c3.metric("Farmers engaged", "600+")
-st.markdown(
-    "**Result** — Scaled from a single fellowship pilot to standing infrastructure, with a trained "
-    "cadre of village-level weather volunteers who took over day-to-day advisory dissemination."
-)
-
-st.divider()
-
-# ---------------------------------------------------------------------------
-st.header("LoRaWAN micro-climate zones — Gram Vikas × ICFOSS")
-st.markdown(
-    """
-**Context** — Standard weather stations give point estimates that miss how much microclimate can
-vary within a few kilometers — a real problem for hyper-local crop advisories.
-
-**Role** — Led the collaboration with ICFOSS and the Government of Kerala to deploy a LoRaWAN-based
-sensor network across 2 Gram Panchayats.
-
-**Result** — An ongoing proof of concept for whether higher-density, lower-cost sensing can resolve
-the kind of hyper-local climate variation that actually determines crop outcomes.
-"""
-)
-
-st.divider()
-
-# ---------------------------------------------------------------------------
-st.header("Village water-point reporting automation — Gram Vikas")
-st.markdown(
-    """
-**Context** — Gram Vikas's Water Resource Technology Group ran village-level water-point surveys
-(350+ columns covering water sources, quality, and cropping patterns) across hundreds of habitations.
-Before automation, turning that into a readable village report meant manually copying data into a
-template, one village at a time.
-
-**Method** — Google Apps Script: a custom spreadsheet menu clones a Google Docs template per
-village, fills 120+ merge fields, exports to PDF, and writes the link back into the sheet.
-
-**Result** — Hours of manual report-writing per village became a single menu click.
-"""
-)
-
-st.divider()
-
-# ---------------------------------------------------------------------------
-st.header("Weather data extraction & turbulence-intensity analysis — Renew")
-st.markdown(
-    """
-**Context** — Renew (via a Mindsprint contract) needed to characterize turbulence intensity — how
-much wind speed fluctuates around its mean — at Indian wind farm sites, since turbulence directly
+**turbulence intensity** — how much wind speed fluctuates around its mean — at Indian wind farm sites, since turbulence directly
 affects turbine loading and IEC site suitability classification.
 
 **Method** — Raw per-turbine wind-speed logs resampled to 15-minute intervals; turbulence intensity
