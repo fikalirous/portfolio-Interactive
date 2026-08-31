@@ -54,7 +54,7 @@ for i, (title, desc, page) in enumerate(cards):
         with st.container(border=True):
             st.markdown(f"#### {title}")
             st.caption(desc)
-            st.page_link(page, label="Open")
+            st.page_link(page, label="Open",color = #ffffff)
 
 st.write("")
 st.divider()
