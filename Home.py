@@ -28,10 +28,6 @@ st.markdown(
     and rural development, focusing on turning data into clear insights for better policy and community outcomes.
     Now based in Ireland, I’m interested in research roles within think tanks and organisations working on social policy, ESG, and data
     governance. I aim to build practical, evidence-based solutions that support inclusive and ethical decision-making.
-    <br><br>
-    This is the interactive companion to my <a href="https://fikalirous.github.io/portfolio/" target="_blank">
-    main portfolio site</a> — the same case studies, but with live charts you can filter, and a couple of
-    simulations you can actually run yourself.
     </div>
     """,
     unsafe_allow_html=True,
