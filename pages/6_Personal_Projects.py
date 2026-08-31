@@ -15,8 +15,8 @@ st.divider()
 
 st.header("The Cloud's Footprint")
 st.markdown(
-    "Mapping the world's data center infrastructure against the carbon, water, and land footprints of the electricity 
-    that powers it — grounded in UNU-INWEH's 2026 global assessment of AI's environmental cost."
+    "Mapping the world's data center infrastructure against the carbon, water, and land footprints of the electricity"
+    "that powers it — grounded in UNU-INWEH's 2026 global assessment of AI's environmental cost."
 )
 components.iframe(
     "https://fikalirous.github.io/data-center-lens?:showVizHome=no&:embed=true",
