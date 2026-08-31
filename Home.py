@@ -38,11 +38,11 @@ st.subheader("Works")
 
 cards = [
     ("⚖️ Policy & Rights", "Disability rights, CSR, and AI-adoption research", "pages/2_Policy_Rights.py"),
-    ("🔬 Research", "human values & internet engagement, a 33-country AI-regulation text analysis, and a live agent-based compliance simulator.", "pages/5_Research.py"),
+    ("🔬 Research", "human values & internet engagement, AI-regulation text analysis, and a live agent-based compliance simulator.", "pages/5_Research.py"),
     ("🏥 Public Health", "District-level TB surveillance, with the live public dashboard embedded.", "pages/3_Public_Health.py"),
     ("🤝 Gender & Grassroots", "Mapping women- and trans-led organizations across Indian states.", "pages/4_Gender_Grassroots.py"),
     ("🌦️ Climate & Agriculture", "Automated weather stations, LoRaWAN micro-climate networks, and a live turbulence-intensity model you can explore month by month.", "pages/1_Climate_Agriculture.py"),
-    ("📊 Personal Projects", "Self-directed Tableau and Canva dashboards, built outside of any client or coursework brief.", "pages/6_Personal_Projects.py"),
+    ("📊 Personal Projects", "Self-directed projects that I have worked on", "pages/6_Personal_Projects.py"),
 ]
 cols = st.columns(2)
 for i, (title, desc, page) in enumerate(cards):
