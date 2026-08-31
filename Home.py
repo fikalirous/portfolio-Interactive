@@ -19,7 +19,6 @@ st.markdown(
 
 st.title("Gokulnath G L")
 st.subheader("Data Science for Social Good")
-st.caption("Data Science for Social Good")
 
 st.markdown(
     """
