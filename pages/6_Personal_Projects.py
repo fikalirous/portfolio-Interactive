@@ -23,6 +23,19 @@ components.iframe(
     height=650, scrolling=True,
 )
 
+
+st.divider()
+
+st.header("1. Attribution Analytics")
+st.markdown(
+    "A dashboard exploring what drives employee attrition — job satisfaction and work-life "
+    "balance as the two lenses on why people leave."
+)
+components.iframe(
+    "https://public.tableau.com/views/onwork/Dashboard1?:showVizHome=no&:embed=true",
+    height=1000, scrolling=True,
+)
+
 st.divider()
 
 st.header("2. Global Power Plant")
