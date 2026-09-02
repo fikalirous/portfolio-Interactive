@@ -20,13 +20,14 @@ st.markdown(
 **turbulence intensity** — how much wind speed fluctuates around its mean — at Indian wind farm sites, since turbulence directly
 affects turbine loading and IEC site suitability classification.
 
-**Method** — Raw per-turbine wind-speed logs resampled to 15-minute intervals; turbulence intensity
-computed as the coefficient of variation of wind speed; a bounded power-law decay model
-`TI = α·v^β + c` fit per month via nonlinear least squares.
+Built a Python pipeline to analyse turbulence intensity across multiple wind turbines based on the Meteoblue weather data, helping improve understanding of wind
+conditions for generation forecasting. Processed turbine wind-speed data at 15-minute intervals and modelled turbulence intensity for each
+turbine and month. The analysis provided a full-year view of turbulence patterns across wind farm sites. 
+`TI = α·v^β + c` fit per month via nonlinear least squares. 
 """
 )
 
-st.markdown("#### 🔧 Try it yourself — turbine BHR-001, 2023")
+st.markdown("#### 🔧 Try it yourself — turbulence model, 2023")
 st.caption(
     "Pick a month to see the real 15-minute wind-speed readings from this turbine, the fitted "
     "turbulence model, and how well it actually explains the data that month."

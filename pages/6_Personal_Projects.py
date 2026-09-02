@@ -13,7 +13,20 @@ st.markdown(
 
 st.divider()
 
-st.header("1. Attribution Analytics")
+st.header("The Cloud's Footprint")
+st.markdown(
+    "Mapping the world's data center infrastructure against the carbon, water, and land footprints of the electricity"
+    "that powers it — grounded in UNU-INWEH's 2026 global assessment of AI's environmental cost."
+)
+components.iframe(
+    "https://fikalirous.github.io/data-center-lens?:showVizHome=no&:embed=true",
+    height=650,width=2000, scrolling=True,
+)
+
+
+st.divider()
+
+st.header("Attribution Analytics")
 st.markdown(
     "A dashboard exploring what drives employee attrition — job satisfaction and work-life "
     "balance as the two lenses on why people leave."
@@ -25,7 +38,7 @@ components.iframe(
 
 st.divider()
 
-st.header("2. Global Power Plant")
+st.header("Global Power Plant")
 st.markdown(
     "Built on 2022 global power generation data: a detailed dashboard breaking down power "
     "generation and major fuel sources by country, across the globe."
@@ -37,7 +50,7 @@ components.iframe(
 
 st.divider()
 
-st.header("3. School Dropout Rates")
+st.header("School Dropout Rates")
 st.markdown(
     "Analyzed student dropout rates across Indian states by educational level — Primary through "
     "Higher Secondary — from 2012 to 2015, using the government's 'Drop-out data' dataset."
@@ -46,7 +59,7 @@ st.link_button("Open in Canva →", "https://www.canva.com/design/DAGIqEBo8Dc/xR
 
 st.divider()
 
-st.header("4. Netflix Business Case")
+st.header("Netflix Business Case")
 st.markdown(
     "Used Python to analyze Netflix's revenue model over a 10-year span, with visualizations "
     "built to support a recommendation on increasing viewership."
@@ -55,7 +68,7 @@ st.link_button("Open in Canva →", "https://www.canva.com/design/DAGIvbSUo3c/mD
 
 st.divider()
 
-st.header("5. Annual Greenhouse Gas Index")
+st.header("Annual Greenhouse Gas Index")
 st.markdown(
     "A companion piece to the Global Power Plant dashboard: the same 2022 global generation "
     "data, read through the lens of the Annual Greenhouse Gas Index (AGGI) and each fuel "
