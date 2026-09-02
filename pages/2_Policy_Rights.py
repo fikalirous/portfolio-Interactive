@@ -6,6 +6,7 @@ import plotly.express as px
 from scipy.stats import kruskal
 
 from utils.theme import MOSS, BRASS, SAGE, MUTED, CATEGORICAL, style_fig
+from utils.nav import section_selector
 
 st.set_page_config(page_title="Policy & Rights", page_icon="⚖️", layout="wide")
 st.title("⚖️ Policy & Rights")
@@ -16,13 +17,15 @@ st.markdown(
     "think tank — built on web scraping, EDA, and NLP applied to policy implementation gaps."
 )
 
-tabs = st.tabs([
+SECTIONS = [
     "UDID", "CCPD", "Gates Foundation", "AI Adoption", "UDISE+",
     "CSR & Sports", "eCourts", "TAN",
-])
+]
+section = section_selector(SECTIONS, param="section")
+st.divider()
 
 # ---------------------------------------------------------------------------
-with tabs[0]:
+if section == "UDID":
     st.subheader("UDID Implementation Study")
     st.markdown(
         "**Context** — The Unique Disability ID (UDID) is India's national digital identity system "
@@ -77,7 +80,7 @@ with tabs[0]:
     )
 
 # ---------------------------------------------------------------------------
-with tabs[1]:
+elif section == "CCPD":
     st.subheader("CCPD disability & subject-matter profiling")
     st.markdown(
         "**Context** — The Office of the Chief Commissioner for Persons with Disabilities (CCPD) is "
@@ -126,7 +129,7 @@ with tabs[1]:
     st.caption("Referenced in a [LinkedIn post](https://www.linkedin.com/posts/disabilityrights-accessibility-inclusion-share-7376214743419822080-yp-S/) crediting the analysis.")
 
 # ---------------------------------------------------------------------------
-with tabs[2]:
+elif section == "Gates Foundation":
     st.subheader("Gates Foundation grants database (BMGF)")
     st.markdown(
         "**Context** — Where does Gates Foundation health-tech money actually land in India? "
@@ -159,7 +162,7 @@ with tabs[2]:
     )
 
 # ---------------------------------------------------------------------------
-with tabs[3]:
+elif section == "AI Adoption":
     st.subheader("AI readiness & adoption in the nonprofit sector — with Giving Tuesday")
     st.markdown(
         "**Context** — GivingTuesday's Generosity AI Working Group surveyed 930 nonprofits worldwide "
@@ -207,7 +210,7 @@ with tabs[3]:
     )
 
 # ---------------------------------------------------------------------------
-with tabs[4]:
+elif section == "UDISE+":
     st.subheader("UDISE+ education data analysis")
     st.markdown(
         "**Context** — UDISE+ is India's national school database. Used it to check how well the "
@@ -252,7 +255,7 @@ with tabs[4]:
     )
 
 # ---------------------------------------------------------------------------
-with tabs[5]:
+elif section == "CSR & Sports":
     st.subheader("CSR & sports development analysis")
     st.markdown(
         """
@@ -275,7 +278,7 @@ thin.
     )
 
 # ---------------------------------------------------------------------------
-with tabs[6]:
+elif section == "eCourts":
     st.subheader("eCourts case-completion database")
     st.markdown(
         """
@@ -296,7 +299,7 @@ validating the approach before the harder problem of scaling nationally.
     )
 
 # ---------------------------------------------------------------------------
-with tabs[7]:
+elif section == "TAN":
     st.subheader("TAN — The Accessibility Network M&E framework")
     st.markdown(
         """

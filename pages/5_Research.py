@@ -5,6 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 from utils.theme import MOSS, BRASS, SAGE, MUTED, REGION_COLORS, style_fig
+from utils.nav import section_selector
 
 st.set_page_config(page_title="Research", page_icon="🔬", layout="wide")
 st.title("🔬 Research")
@@ -16,10 +17,12 @@ st.markdown(
     "regulation, and an agent-based model of regulatory compliance."
 )
 
-tabs = st.tabs(["Human Values & ESS", "AI Regulatory Landscape", "AI Regulation — ABM Simulator"])
+SECTIONS = ["Human Values & ESS", "AI Regulatory Landscape", "AI Regulation — ABM Simulator"]
+section = section_selector(SECTIONS, param="section")
+st.divider()
 
 # ---------------------------------------------------------------------------
-with tabs[0]:
+if section == "Human Values & ESS":
     st.subheader("Human values & internet engagement — European Social Survey")
     st.markdown(
         """
@@ -42,7 +45,7 @@ interaction tests found the effect concentrated in a particular group.
     st.link_button("Open the companion dashboard →", "https://essround11viz.streamlit.app/")
 
 # ---------------------------------------------------------------------------
-with tabs[1]:
+elif section == "AI Regulatory Landscape":
     st.subheader("Mapping the Global AI Regulatory Landscape")
     st.markdown(
         """
@@ -93,7 +96,7 @@ restrictive-vs-permissive tone classifier.
     )
 
 # ---------------------------------------------------------------------------
-with tabs[2]:
+elif section == "AI Regulation — ABM Simulator":
     st.subheader("Adoption of AI Regulation — live Agent-Based Model")
     st.markdown(
         """
