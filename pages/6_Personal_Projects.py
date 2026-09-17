@@ -5,11 +5,6 @@ st.set_page_config(page_title="Personal Projects", page_icon="📊", layout="wid
 st.title("📊 Personal Projects")
 st.caption("Self-directed dashboards and analyses, in the order I built them")
 
-st.markdown(
-    "Smaller, self-directed work — mostly Tableau and Canva — built to practice a specific skill "
-    "or explore a dataset that interested me, outside of any client or coursework brief. The "
-    "Tableau dashboards are embedded live below; the Canva pieces open in a new tab."
-)
 
 st.divider()
 
