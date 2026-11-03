@@ -27,10 +27,10 @@ st.divider()
 if section == "UDID":
     st.subheader("UDID Implementation Study")
     st.markdown(
-        "**Context** — The Unique Disability ID (UDID) is India's national digital identity system "
+        "The Unique Disability ID (UDID) is India's national digital identity system "
         "for persons with disabilities. Pacta studied how well it works on the ground, surveying "
         "PwDs and caregivers about applying for and receiving certification.\n\n"
-        "**Method** — Data cleaning and EDA on 393 survey responses: demographic and disability-type "
+        "Methods used include Data cleaning and EDA on 393 survey responses: demographic and disability-type "
         "breakdowns split by who reported (self vs. caregiver), rural/urban comparisons, and text "
         "cleaning of open-ended issue reports."
     )
@@ -82,10 +82,10 @@ if section == "UDID":
 elif section == "CCPD":
     st.subheader("CCPD disability & subject-matter profiling")
     st.markdown(
-        "**Context** — The Office of the Chief Commissioner for Persons with Disabilities (CCPD) is "
+        "The Office of the Chief Commissioner for Persons with Disabilities (CCPD) is "
         "India's statutory grievance redressal body. Pacta analyzed a year of CCPD case data — 369 "
         "complaints filed in 2023 — to see who files complaints and what they're about.\n\n"
-        "**Method** — Cross-tabulations of complainant profile against disability type, subject "
+        "Method used include Cross-tabulations of complainant profile against disability type, subject "
         "matter, and state."
     )
 
@@ -128,13 +128,13 @@ elif section == "CCPD":
     st.caption("Referenced in a [LinkedIn post](https://www.linkedin.com/posts/disabilityrights-accessibility-inclusion-share-7376214743419822080-yp-S/) crediting the analysis.")
 
 # ---------------------------------------------------------------------------
-elif section == "Gates Foundation":
+elif section == "Gates Foundation fund flow analysis":
     st.subheader("Gates Foundation grants database (BMGF)")
     st.markdown(
-        "**Context** — Where does Gates Foundation health-tech money actually land in India? "
+        "Where does Gates Foundation health-tech money actually land in India? "
         "Scraped the public [Committed Grants Database](https://www.gatesfoundation.org/about/committed-grants) "
         "— 36,564 grants worldwide, filtered to India's tech-in-health subset.\n\n"
-        "**Method** — Python scraping and cleaning; successive filtering (global → India → health → "
+        "Method used include Python scraping and cleaning; successive filtering (global → India → health → "
         "tech-in-health); grouped by state."
     )
 
@@ -164,11 +164,11 @@ elif section == "Gates Foundation":
 elif section == "AI Adoption":
     st.subheader("AI readiness & adoption in the nonprofit sector — with Giving Tuesday")
     st.markdown(
-        "**Context** — GivingTuesday's Generosity AI Working Group surveyed 930 nonprofits worldwide "
+        "GivingTuesday's Generosity AI Working Group surveyed 930 nonprofits worldwide "
         "on AI readiness in 2024, with a 251-organization India supplement. I built an independent "
         "statistical layer testing whether region, role, or org size actually predict an "
         "individual's comfort with AI.\n\n"
-        "**Method** — Kruskal-Wallis tests for AI comfort against region, role, and organization size "
+        "Methods used include  Kruskal-Wallis tests for AI comfort against region, role, and organization size "
         "across 230 India responses."
     )
 
@@ -212,10 +212,10 @@ elif section == "AI Adoption":
 elif section == "UDISE+":
     st.subheader("UDISE+ education data analysis")
     st.markdown(
-        "**Context** — UDISE+ is India's national school database. Used it to check how well the "
+        "UDISE+ is India's national school database. Used it to check how well the "
         "school system serves Children with Special Needs (CWSN) — not just enrollment, but whether "
         "they stay enrolled.\n\n"
-        "**Method** — Aggregated enrollment by grade, gender, and disability type across all districts, "
+        "Methods used include Aggregated enrollment by grade, gender, and disability type across all districts, "
         "plus a district-level correlation between special-educator staffing and CwD enrollment."
     )
 
@@ -258,15 +258,15 @@ elif section == "CSR & Sports":
     st.subheader("CSR & sports development analysis")
     st.markdown(
         """
-**Context** — CSR spending has been legally mandated in India since 2014, but almost no one had
+"CSR spending has been legally mandated in India since 2014, but almost no one had
 traced how much reaches sports. Pacta partnered with the Sports and Society Accelerator to build
 that picture across the mandate's first decade (2014–2023).
 
-**Method** — Selenium/requests scraping of India's official CSR portal across four fiscal years,
+Methods used include Selenium/requests scraping of India's official CSR portal across four fiscal years,
 company-level deep dives, and comparative analysis of listed vs. unlisted companies and state-wise
 spending.
 
-**Output** — *CSR and Sports in India — The First Decade*, co-published with the Sports and Society
+*CSR and Sports in India — The First Decade*, co-published with the Sports and Society
 Accelerator, presented across two public Data Walk sessions, [announced on
 LinkedIn](https://www.linkedin.com/posts/gokulnath-g-l-13071a178_csr-sports-in-india-pacta-june-2025-activity-7349091829461508096-7ubI/).
 
@@ -277,36 +277,15 @@ thin.
     )
 
 # ---------------------------------------------------------------------------
-elif section == "eCourts":
-    st.subheader("eCourts case-completion database")
-    st.markdown(
-        """
-**Context** — After a personal experience of losing a court case with little visibility into how it
-was progressing, the idea was to build a public database of completed cases by state using India's
-[eCourts](https://ecourts.gov.in/ecourts2.0/) system.
-
-**Method** — `requests`/BeautifulSoup for static pages, Selenium for JavaScript-rendered case-status
-tables, generalized from a single district court into a district-list-driven scraper.
-
-**Result** — The proof of concept held up at state scale (all of Karnataka's district courts),
-validating the approach before the harder problem of scaling nationally.
-"""
-    )
-    st.caption(
-        "Only the scraping methodology is described here — case-level data (which includes "
-        "petitioner and respondent names) isn't published, even though the source records are public."
-    )
-
-# ---------------------------------------------------------------------------
 elif section == "TAN":
     st.subheader("TAN — The Accessibility Network M&E framework")
     st.markdown(
         """
-**Context** — The Accessibility Network (TAN) is a Tech Mahindra Foundation platform connecting
+The Accessibility Network (TAN) is a Tech Mahindra Foundation platform connecting
 persons with disabilities to service providers, with at least four stakeholders who each need a
 different reason to care whether it works.
 
-**Method** — Outcome mapping: four parallel, color-coded causal chains (one per stakeholder) running
+Methods involve Outcome mapping: four parallel, color-coded causal chains (one per stakeholder) running
 from immediate platform behaviors to each group's long-term outcome.
 
 **Output** — The Outcome Framework, part of Pacta's
