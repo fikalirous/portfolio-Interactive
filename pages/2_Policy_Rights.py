@@ -18,7 +18,7 @@ st.markdown(
 
 SECTIONS = [
     "UDID", "CCPD", "Gates Foundation fund flow analysis", "AI Adoption", "UDISE+",
-    "CSR & Sports", "eCourts", "TAN",
+    "CSR & Sports", "TAN",
 ]
 section = section_selector(SECTIONS, param="section")
 st.divider()
