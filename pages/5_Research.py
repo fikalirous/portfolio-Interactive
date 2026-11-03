@@ -12,7 +12,7 @@ st.title("🔬 Research")
 st.caption("Digital inclusion, AI governance, and simulation — MSc Social Data Science, UCD")
 
 st.markdown(
-    "Coursework and research from my MSc at University College Dublin: human values and digital "
+    "Human values and digital "
     "inclusion using the European Social Survey, a quantitative text analysis of global AI "
     "regulation, and an agent-based model of regulatory compliance."
 )
