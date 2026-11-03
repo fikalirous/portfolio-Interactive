@@ -13,8 +13,7 @@ st.title("⚖️ Policy & Rights")
 st.caption("Disability rights, CSR, and AI-adoption research at Pacta")
 
 st.markdown(
-    "Quantitative research in disability, law, and CSR at Pacta, a Bengaluru-based law firm and "
-    "think tank — built on web scraping, EDA, and NLP applied to policy implementation gaps."
+    "Quantitative research in disability, law, and CSR data built on web scraping, EDA, and NLP."
 )
 
 SECTIONS = [
