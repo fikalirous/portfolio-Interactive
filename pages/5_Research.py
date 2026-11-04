@@ -17,12 +17,12 @@ st.markdown(
     "regulation, and an agent-based model of regulatory compliance."
 )
 
-SECTIONS = ["Human Values & ESS", "AI Regulatory Landscape", "AI Regulation — ABM Simulator"]
+SECTIONS = ["AI Regulatory Landscape", "AI Regulation — ABM Simulator", "Human Values & ESS"]
 section = section_selector(SECTIONS, param="section")
 st.divider()
 
 # ---------------------------------------------------------------------------
-elif section == "AI Regulatory Landscape":
+if section == "AI Regulatory Landscape":
     st.subheader("Mapping the Global AI Regulatory Landscape")
     st.markdown(
         """
@@ -154,7 +154,7 @@ model live.**
     )
 
 # ---------------------------------------------------------------------------
-if section == "Human Values & ESS":
+elif section == "Human Values & ESS":
     st.subheader("Human values & internet engagement — European Social Survey")
     st.markdown(
         """
