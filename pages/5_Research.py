@@ -22,29 +22,6 @@ section = section_selector(SECTIONS, param="section")
 st.divider()
 
 # ---------------------------------------------------------------------------
-if section == "Human Values & ESS":
-    st.subheader("Human values & internet engagement — European Social Survey")
-    st.markdown(
-        """
-**Context** — Does what people *value* — not just their age or education — shape how they engage
-with the internet? Tested this in Ireland using four rounds of the European Social Survey
-(2016–2023): 24,250 respondents overall, narrowing to 4,677 in the final regression sample.
-
-**Method** — Weighted descriptives, a three-model OLS sequence (values-only baseline → demographic
-controls → full Schwartz value decomposition), an ordinal logistic regression, and six interaction
-models testing whether the values effect concentrated in a particular age, gender, or education
-group.
-
-**Result** — Conservation values, not openness, were the value dimension that mattered: holding more
-conservative values predicted meaningfully lower internet engagement even after controlling for
-age, education, gender, and income (β = −0.065, p < .01). That effect was small next to the
-demographic controls — R² went from 0.042 to 0.233 once controls were added — and none of the six
-interaction tests found the effect concentrated in a particular group.
-"""
-    )
-    st.link_button("Open the companion dashboard →", "https://essround11viz.streamlit.app/")
-
-# ---------------------------------------------------------------------------
 elif section == "AI Regulatory Landscape":
     st.subheader("Mapping the Global AI Regulatory Landscape")
     st.markdown(
@@ -175,3 +152,26 @@ model live.**
         "burden to 0.0 above — that's the model's best case for compliance, and even then, "
         "resistant agents don't disappear."
     )
+
+# ---------------------------------------------------------------------------
+if section == "Human Values & ESS":
+    st.subheader("Human values & internet engagement — European Social Survey")
+    st.markdown(
+        """
+**Context** — Does what people *value* — not just their age or education — shape how they engage
+with the internet? Tested this in Ireland using four rounds of the European Social Survey
+(2016–2023): 24,250 respondents overall, narrowing to 4,677 in the final regression sample.
+
+**Method** — Weighted descriptives, a three-model OLS sequence (values-only baseline → demographic
+controls → full Schwartz value decomposition), an ordinal logistic regression, and six interaction
+models testing whether the values effect concentrated in a particular age, gender, or education
+group.
+
+**Result** — Conservation values, not openness, were the value dimension that mattered: holding more
+conservative values predicted meaningfully lower internet engagement even after controlling for
+age, education, gender, and income (β = −0.065, p < .01). That effect was small next to the
+demographic controls — R² went from 0.042 to 0.233 once controls were added — and none of the six
+interaction tests found the effect concentrated in a particular group.
+"""
+    )
+    st.link_button("Open the companion dashboard →", "https://essround11viz.streamlit.app/")
