@@ -174,4 +174,4 @@ demographic controls — R² went from 0.042 to 0.233 once controls were added �
 interaction tests found the effect concentrated in a particular group.
 """
     )
-    st.link_button("Open the companion dashboard →", "https://essround11viz.streamlit.app/")
+    st.link_button("Open the companion dashboard →", "")
